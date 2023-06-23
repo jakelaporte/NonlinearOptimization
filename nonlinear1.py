@@ -10,7 +10,7 @@ Demo1: Bisection method for finding a zero
 import numpy as np
 import pandas as pd
 import plotly.express as px
-plt.style.use("ggplot")
+
 
 import streamlit as st
 st.write("""
@@ -52,19 +52,10 @@ for step in range(max_step):
     a,b = bisection_step(f,a,b)
     a_list.append(a)
     b_list.append(b)
-    
-# idx = st.slider("Choose a time:",min_value = 0,
-#                      max_value = 4,value=0) 
+          
 idx = st.number_input(":blue[**Choose a step**]",min_value=0,max_value=4,
                       step=1)
-#idx = 1
-#fig, ax = plt.subplots()
-#ax.plot(t,f(t))
-#ax.scatter([a_list[idx],b_list[idx]],[0,0],color="blue")
-#ax.text(-4,50,"Step: "+str(idx))
-#st.pyplot(fig)
-#plt.show()
-#fig = px.colors.qualitative.swatches()
+
 curr_val = (a_list[idx]+b_list[idx])/2
 st.write("#### Current estimated value = "+str(curr_val))
 st.write("#### $f(x) = 3x^2-12$")
