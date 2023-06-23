@@ -1,4 +1,4 @@
-ploly
-matplotlib
+ploly.express
+matplotlib.pyplot
 numpy
 pandas
