@@ -9,7 +9,6 @@ Demo1: Bisection method for finding a zero
 """
 import numpy as np
 import pandas as pd
-import matplotlib.pyplot as plt
 import plotly.express as px
 plt.style.use("ggplot")
 
