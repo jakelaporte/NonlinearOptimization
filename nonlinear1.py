@@ -15,7 +15,7 @@ import plotly.express as px
 import streamlit as st
 st.write("""
           # Bisection Method Demonstration
-          Given the function whose zeros lie at -2,2; watch the algorithm get
+          Given the function $3x^2-12$ whose zeros lie at -2,2; watch the algorithm get
           close to the solution by taking incremental steps.
           """)
 
